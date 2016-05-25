@@ -1,0 +1,117 @@
+body {
+	background-color: #5BA3D6;
+}
+
+label {
+	color: white;
+	text-align: justify;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+}
+
+input, select, textarea {
+	width: 200px;
+	outline: none;
+	margin-bottom: 20px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-top: 3px;
+	display: inline-block;
+	color: white;
+	border: 1px, solid white;
+	border-style: solid;
+	border-color: white;
+	background-color: #5BA3D6;
+}
+
+select {
+	border-style: square;
+}
+textarea {
+	width: 200px;
+	height: 80px;
+	outline: none;
+	//outline-color: darkblue;
+	overflow: auto;
+	border: 3px, solid white;
+	border-color: white;
+}
+
+::-webkit-input-placeholder {
+   color: #397BAB;
+   font-style: italic;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #397BAB;
+   font-style: italic;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #397BAB;
+   font-style: italic;
+}
+
+:-ms-input-placeholder {  
+   color: #397BAB;
+   font-style: italic;  
+}
+
+.name {
+	border:2px solid blue;
+}
+
+.commentArea {
+	height: 150px
+	padding: 5px;
+}
+
+.input, textarea, select {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.container {
+	padding-top: 20px;
+	padding-left: 50px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0px auto;
+	width: 100%;
+}
+
+.column {
+	padding: 10px;
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	box-sizing: border-box;
+}
+
+.left {
+	width: 30%;
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+}
+
+.middle {
+	width: 30%;
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+}
+
+.right {
+	width: 30%;
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+}
+
+@media only screen and (max-width: 500px) {
+    .left, .middle, .right {
+        width:100%;
+    }
+}

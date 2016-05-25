@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Hello World</title>
-<link type="text/css" rel="stylesheet" href="CSS/main.css">
+<title>Responsive Text Field</title>
 <link type="text/css" rel="stylesheet" href="CSS/reset.css">
+<link type="text/css" rel="stylesheet" href="CSS/main.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<h1>Hello World</h1>
-	<p> this is a new change</p>
+<div class="container">
+	<div class="column left">
+	<form>
+	<label for="first name">First Name</label><br>
+		<input name="first name" type="text" placeholder="First" required, autocomplete><br>
+	<label for="last name">Last Name</label><br>
+		<input name="last name" type="text" placeholder="Last" required, autocomplete><br>
+	<label for="email">Email</label><br>
+		<input name="email" type="email" placeholder="johndoe@email.com" required, autocomplete><br>
+	<label for="country">Country</label><br>
+		<select>
+			<option value="choose">Choose Your Country</option>
+  			<option value="usa">USA</option>
+  			<option value="france">France</option>
+ 			<option value="greatBritain">Great Britain</option>
+ 			<option value="china">China</option>
+		</select><br>
+	<label for="biography">Biography</label>
+		<textarea name="biography" class="bioArea" placeholder="What's Your Story?"></textarea>
+	</form>
+	</div>
+
+	<div class="column middle">
+	<form>
+		<label for="phone">Phone Number</label><br>
+			<input name="phone" type="text" placeholder="Your Digits..." required, autocomplete><br>
+		<label for="affiliations">Affiliations</label><br>
+			<textarea name="affliations" class="affil" placeholder="Groups"></textarea><br>
+		<label for="occupation">Occupations</label><br>
+			<select>
+				<option value="which">What are your Occupations?</option>
+  				<option value="retail">Retail Slave</option>
+  				<option value="manager">Managerial Material</option>
+ 				<option value="designer">Designer</option>
+ 				<option value="code">Code Monkey
+ 				</option>
+			</select><br>
+		<label for="catName">Cat's Name</label><br>
+			<input type="text" name="catName" placeholder="Companion?"><br>
+		<label for="gadget">Favorite Gadget</label><br>
+			<input type="text" name="gadget" placeholder="Fav Tech?"><br>
+	</form>
+	</div>
+
+	<div class="column right">
+		<form>
+			<label for="talent">Type of Talent</label><br>
+				<select>
+					<option value="choose">Choose Your Skillset</option>
+					<option value="coding">Hacking</option>
+					<option value="design">Art</option>
+					<option value="manager">TaskMaster</option>
+				</select><br>
+			<label for="drink">Favorite Drink</label><br>
+				<input name="drink" type="text" placeholder="Coke, Pepsi, etc..."><br>
+			<label for="power">Special Power</label><br>
+				<input type="text" name="power" placeholder="My Power"><br>
+			<label for="weapon">Weapon of Choice</label><br>
+				<input type="text" name="weapon" placeholder="My Weapon"><br>
+			<label for="comment">Leave a Comment</label><br>
+				<textarea name="comment" class="comment" placeholder="Thoughts?"></textarea><br>
+				<input type="submit" value="Submit">
+		</form>
+	</div>
+
+
+</div>
 </body>
 </html>
